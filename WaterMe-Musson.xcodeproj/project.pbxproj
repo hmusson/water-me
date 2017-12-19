@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A1CCB9E91FA7BDD40012C82F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CCB9E81FA7BDD40012C82F /* AppDelegate.swift */; };
-		A1CCB9EB1FA7BDD40012C82F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CCB9EA1FA7BDD40012C82F /* ViewController.swift */; };
 		A1CCB9EE1FA7BDD40012C82F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CCB9EC1FA7BDD40012C82F /* Main.storyboard */; };
 		A1CCB9F01FA7BDD40012C82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CCB9EF1FA7BDD40012C82F /* Assets.xcassets */; };
 		A1CCB9F31FA7BDD40012C82F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CCB9F11FA7BDD40012C82F /* LaunchScreen.storyboard */; };
+		A1CCB9FE1FA7CFB20012C82F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CCB9FD1FA7CFB20012C82F /* Plant.swift */; };
+		A1CCBA021FA7D1500012C82F /* PlantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CCBA011FA7D1500012C82F /* PlantTableViewController.swift */; };
+		A1CCBA041FA7D15E0012C82F /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CCBA031FA7D15E0012C82F /* PlantViewController.swift */; };
+		A1CCBA061FA7D1690012C82F /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CCBA051FA7D1690012C82F /* AddPlantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1CCB9E51FA7BDD40012C82F /* WaterMe-Musson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaterMe-Musson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CCB9E81FA7BDD40012C82F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1CCB9EA1FA7BDD40012C82F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1CCB9ED1FA7BDD40012C82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1CCB9EF1FA7BDD40012C82F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CCB9F21FA7BDD40012C82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1CCB9F41FA7BDD40012C82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1CCB9FD1FA7CFB20012C82F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		A1CCBA011FA7D1500012C82F /* PlantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewController.swift; sourceTree = "<group>"; };
+		A1CCBA031FA7D15E0012C82F /* PlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
+		A1CCBA051FA7D1690012C82F /* AddPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		A1CCB9E71FA7BDD40012C82F /* WaterMe-Musson */ = {
 			isa = PBXGroup;
 			children = (
-				A1CCB9E81FA7BDD40012C82F /* AppDelegate.swift */,
-				A1CCB9EA1FA7BDD40012C82F /* ViewController.swift */,
-				A1CCB9EC1FA7BDD40012C82F /* Main.storyboard */,
-				A1CCB9EF1FA7BDD40012C82F /* Assets.xcassets */,
-				A1CCB9F11FA7BDD40012C82F /* LaunchScreen.storyboard */,
+				A1CCB9FC1FA7CF230012C82F /* models */,
+				A1CCB9FA1FA7BF1C0012C82F /* controllers */,
+				A1CCB9FB1FA7BF490012C82F /* views */,
 				A1CCB9F41FA7BDD40012C82F /* Info.plist */,
 			);
 			path = "WaterMe-Musson";
+			sourceTree = "<group>";
+		};
+		A1CCB9FA1FA7BF1C0012C82F /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1CCB9E81FA7BDD40012C82F /* AppDelegate.swift */,
+				A1CCBA011FA7D1500012C82F /* PlantTableViewController.swift */,
+				A1CCBA031FA7D15E0012C82F /* PlantViewController.swift */,
+				A1CCBA051FA7D1690012C82F /* AddPlantViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		A1CCB9FB1FA7BF490012C82F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A1CCB9EC1FA7BDD40012C82F /* Main.storyboard */,
+				A1CCB9EF1FA7BDD40012C82F /* Assets.xcassets */,
+				A1CCB9F11FA7BDD40012C82F /* LaunchScreen.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A1CCB9FC1FA7CF230012C82F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A1CCB9FD1FA7CFB20012C82F /* Plant.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CCB9EB1FA7BDD40012C82F /* ViewController.swift in Sources */,
+				A1CCBA061FA7D1690012C82F /* AddPlantViewController.swift in Sources */,
 				A1CCB9E91FA7BDD40012C82F /* AppDelegate.swift in Sources */,
+				A1CCB9FE1FA7CFB20012C82F /* Plant.swift in Sources */,
+				A1CCBA041FA7D15E0012C82F /* PlantViewController.swift in Sources */,
+				A1CCBA021FA7D1500012C82F /* PlantTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
